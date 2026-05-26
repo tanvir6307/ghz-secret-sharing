@@ -1,0 +1,14 @@
+name,n_qubits,fidelity
+Monz_2011_3q,3,0.99
+Monz_2011_6q,6,0.885
+Monz_2011_14q,14,0.51
+Song_2019_12q,12,0.55
+Song_2019_18q,18,0.52
+Omran_2019_4q,4,0.94
+Omran_2019_8q,8,0.85
+Omran_2019_20q,20,0.54
+IBM_3q_manila,3,0.875
+IBM_5q_manila,5,0.78
+Mooney_2021_3q,3,0.87
+Mooney_2021_5q,5,0.75
+Mooney_2021_7q,7,0.62

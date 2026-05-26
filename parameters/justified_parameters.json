@@ -1,0 +1,241 @@
+{
+  "ibmq_manila": {
+    "device_type": "superconducting_transmon",
+    "num_qubits": 5,
+    "max_ghz_qubits": 5,
+    "connectivity": "linear",
+    "coupling_map": [[0,1],[1,0],[1,2],[2,1],[2,3],[3,2],[3,4],[4,3]],
+    "ghz_qubit_layout": {
+      "3": [0, 1, 2],
+      "4": [0, 1, 2, 3],
+      "5": [0, 1, 2, 3, 4]
+    },
+    "T1": {
+      "values_per_qubit": [110e-6, 105e-6, 95e-6, 115e-6, 100e-6],
+      "mean": 105e-6,
+      "std": 15e-6,
+      "unit": "seconds",
+      "source": "IBM Quantum calibration data (Falcon r5.11)"
+    },
+    "T2": {
+      "values_per_qubit": [125e-6, 115e-6, 100e-6, 130e-6, 110e-6],
+      "mean": 116e-6,
+      "std": 20e-6,
+      "unit": "seconds",
+      "source": "IBM Quantum calibration data"
+    },
+    "single_qubit_gate_error": {
+      "values_per_qubit": [0.0003, 0.0004, 0.0003, 0.0005, 0.0004],
+      "mean": 0.00038,
+      "source": "Randomized benchmarking calibration"
+    },
+    "cnot_gate_error": {
+      "(0,1)": 0.0085,
+      "(1,2)": 0.0095,
+      "(2,3)": 0.0110,
+      "(3,4)": 0.0092,
+      "mean": 0.00955,
+      "source": "Two-qubit randomized benchmarking"
+    },
+    "readout_error": {
+      "per_qubit": [0.0240, 0.0315, 0.0280, 0.0195, 0.0265],
+      "mean": 0.0259,
+      "source": "Readout calibration"
+    },
+    "gate_durations": {
+      "single_qubit_ns": 50,
+      "cnot_ns": 300,
+      "measurement_ns": 2000,
+      "reset_ns": 1000,
+      "source": "IBM Quantum device specifications"
+    },
+    "zz_coupling_Hz": {
+      "(0,1)": -125000,
+      "(1,2)": -98000,
+      "(2,3)": -115000,
+      "(3,4)": -110000,
+      "source": "Malekakhlagh et al. (2020) PRX; typical transmon ZZ values"
+    },
+    "leakage_rates": {
+      "single_qubit": 0.0005,
+      "cnot": 0.005,
+      "source": "Rol et al. (2020) PRL; Wood & Gambetta (2018)"
+    },
+    "one_over_f_noise": {
+      "alpha": 0.9,
+      "amplitude": 5e-6,
+      "source": "Yan et al. (2016) Nature Communications"
+    },
+    "thermal_population": {
+      "value": 0.02,
+      "temperature_K": 0.015,
+      "source": "IBM device specifications, ~15 mK dilution fridge"
+    },
+    "classical_communication_delay_ns": 500,
+    "systematic_over_rotation": 0.001
+  },
+
+  "ibm_nairobi": {
+    "device_type": "superconducting_transmon",
+    "num_qubits": 7,
+    "max_ghz_qubits": 7,
+    "connectivity": "heavy_hex",
+    "coupling_map": [[0,1],[1,0],[1,2],[2,1],[2,3],[3,2],[3,5],[5,3],[4,5],[5,4],[5,6],[6,5]],
+    "ghz_qubit_layout": {
+      "3": [0, 1, 2],
+      "4": [0, 1, 2, 3],
+      "5": [0, 1, 2, 3, 5],
+      "6": [0, 1, 2, 3, 5, 4],
+      "7": [0, 1, 2, 3, 5, 4, 6]
+    },
+    "T1": {
+      "values_per_qubit": [85e-6, 90e-6, 78e-6, 95e-6, 80e-6, 88e-6, 82e-6],
+      "mean": 85e-6,
+      "std": 12e-6,
+      "unit": "seconds",
+      "source": "IBM Quantum calibration data (Falcon r5.11H)"
+    },
+    "T2": {
+      "values_per_qubit": [95e-6, 100e-6, 85e-6, 110e-6, 90e-6, 105e-6, 88e-6],
+      "mean": 96e-6,
+      "std": 15e-6,
+      "unit": "seconds",
+      "source": "IBM Quantum calibration data"
+    },
+    "single_qubit_gate_error": {
+      "values_per_qubit": [0.0004, 0.0003, 0.0005, 0.0004, 0.0006, 0.0003, 0.0005],
+      "mean": 0.00043,
+      "source": "Randomized benchmarking calibration"
+    },
+    "cnot_gate_error": {
+      "(0,1)": 0.0110,
+      "(1,2)": 0.0125,
+      "(2,3)": 0.0098,
+      "(3,5)": 0.0105,
+      "(4,5)": 0.0130,
+      "(5,6)": 0.0115,
+      "mean": 0.01138,
+      "source": "Two-qubit randomized benchmarking"
+    },
+    "readout_error": {
+      "per_qubit": [0.035, 0.028, 0.042, 0.025, 0.038, 0.030, 0.033],
+      "mean": 0.033,
+      "source": "Readout calibration"
+    },
+    "gate_durations": {
+      "single_qubit_ns": 50,
+      "cnot_ns": 340,
+      "measurement_ns": 2000,
+      "reset_ns": 1000,
+      "source": "IBM Quantum device specifications"
+    },
+    "zz_coupling_Hz": {
+      "(0,1)": -135000,
+      "(1,2)": -105000,
+      "(2,3)": -120000,
+      "(3,5)": -95000,
+      "(4,5)": -140000,
+      "(5,6)": -110000,
+      "source": "Malekakhlagh et al. (2020) PRX; typical transmon ZZ values"
+    },
+    "leakage_rates": {
+      "single_qubit": 0.0006,
+      "cnot": 0.006,
+      "source": "Rol et al. (2020) PRL; Wood & Gambetta (2018)"
+    },
+    "one_over_f_noise": {
+      "alpha": 0.9,
+      "amplitude": 6e-6,
+      "source": "Yan et al. (2016) Nature Communications"
+    },
+    "thermal_population": {
+      "value": 0.025,
+      "temperature_K": 0.015,
+      "source": "IBM device specifications"
+    },
+    "classical_communication_delay_ns": 500,
+    "systematic_over_rotation": 0.0012
+  },
+
+  "ibm_torino": {
+    "device_type": "superconducting_transmon",
+    "num_qubits": 133,
+    "max_ghz_qubits": 7,
+    "connectivity": "heavy_hex",
+    "coupling_map": [[0,1],[1,0],[1,2],[2,1],[2,3],[3,2],[3,4],[4,3],[4,5],[5,4],[5,6],[6,5]],
+    "ghz_qubit_layout": {
+      "3": [0, 1, 2],
+      "4": [0, 1, 2, 3],
+      "5": [0, 1, 2, 3, 4],
+      "6": [0, 1, 2, 3, 4, 5],
+      "7": [0, 1, 2, 3, 4, 5, 6]
+    },
+    "T1": {
+      "values_per_qubit": [290e-6, 310e-6, 275e-6, 305e-6, 260e-6, 285e-6, 295e-6],
+      "mean": 288e-6,
+      "std": 40e-6,
+      "unit": "seconds",
+      "source": "IBM Quantum calibration data (Heron r2, 2025)"
+    },
+    "T2": {
+      "values_per_qubit": [210e-6, 230e-6, 195e-6, 225e-6, 200e-6, 215e-6, 220e-6],
+      "mean": 212e-6,
+      "std": 30e-6,
+      "unit": "seconds",
+      "source": "IBM Quantum calibration data (Heron r2)"
+    },
+    "single_qubit_gate_error": {
+      "values_per_qubit": [0.00020, 0.00018, 0.00022, 0.00019, 0.00021, 0.00020, 0.00023],
+      "mean": 0.00020,
+      "source": "Randomized benchmarking (Heron r2 processor)"
+    },
+    "cnot_gate_error": {
+      "(0,1)": 0.0038,
+      "(1,2)": 0.0042,
+      "(2,3)": 0.0035,
+      "(3,4)": 0.0040,
+      "(4,5)": 0.0045,
+      "(5,6)": 0.0041,
+      "mean": 0.0040,
+      "source": "Two-qubit ECR gate benchmarking (tunable couplers)"
+    },
+    "readout_error": {
+      "per_qubit": [0.012, 0.015, 0.011, 0.013, 0.014, 0.012, 0.013],
+      "mean": 0.013,
+      "source": "Readout calibration (improved dispersive readout)"
+    },
+    "gate_durations": {
+      "single_qubit_ns": 35,
+      "cnot_ns": 84,
+      "measurement_ns": 1600,
+      "reset_ns": 800,
+      "source": "IBM Heron processor specifications (ECR native gate)"
+    },
+    "zz_coupling_Hz": {
+      "(0,1)": -15000,
+      "(1,2)": -12000,
+      "(2,3)": -18000,
+      "(3,4)": -14000,
+      "(4,5)": -16000,
+      "(5,6)": -13000,
+      "source": "Tunable coupler residual ZZ (Hertzberg et al. 2021, greatly reduced)"
+    },
+    "leakage_rates": {
+      "single_qubit": 0.0003,
+      "cnot": 0.002,
+      "source": "Heron processor improved leakage mitigation"
+    },
+    "one_over_f_noise": {
+      "alpha": 0.9,
+      "amplitude": 3e-6,
+      "source": "Improved TLS defect management in Heron"
+    },
+    "thermal_population": {
+      "value": 0.012,
+      "temperature_K": 0.012,
+      "source": "IBM Heron cryogenic specifications"
+    },
+    "classical_communication_delay_ns": 300,
+    "systematic_over_rotation": 0.0005
+  }
+}

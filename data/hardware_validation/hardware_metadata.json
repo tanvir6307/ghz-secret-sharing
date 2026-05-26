@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-02-17T18:38:00",
+  "backend": "ibm_marrakesh",
+  "n_qubits_tested": [
+    3,
+    5,
+    7
+  ],
+  "n_shots": 4096,
+  "job_id": "d6a62bpd1ejc73c8b6h0"
+}

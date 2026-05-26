@@ -1,0 +1,10 @@
+error_source,contribution_percent,contribution_absolute,phase,notes
+CNOT_errors,1.900879749999984,0.01900879749999984,,
+H_gate_error,0.038,0.00038,,
+T1_relaxation,1.851406401058675,0.01851406401058675,,
+T2_dephasing,1.6763334725926282,0.016763334725926282,,
+readout,7.77,0.07769999999999999,,
+state_preparation,6.0,0.06,,
+leakage,1.05,0.0105,,
+crosstalk,0.2,0.002,,
+total,20.486619623651286,0.20486619623651287,,
