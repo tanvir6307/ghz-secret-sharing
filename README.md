@@ -81,9 +81,8 @@ ghz_secret_sharing/
 ├── figures/                    # Publication-quality figures (PDF)
 ├── output/                     # Hardware validation results
 ├── run_simulation.py           # Full simulation pipeline
-├── run_hardware_validation.py  # IBM Quantum hardware execution
-├── manuscript.tex              # Research manuscript (revtex4-2)
-└── references.bib              # Bibliography (43 entries)
+└──run_hardware_validation.py  # IBM Quantum hardware execution
+
 ```
 
 ## Installation
